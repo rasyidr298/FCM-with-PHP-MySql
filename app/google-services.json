@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1012621767158",
+    "firebase_url": "https://latihan-fcm-with-php.firebaseio.com",
+    "project_id": "latihan-fcm-with-php",
+    "storage_bucket": "latihan-fcm-with-php.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1012621767158:android:31b1c0c965049ae45357d7",
+        "android_client_info": {
+          "package_name": "com.rrdev.fcmwithmysql"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1012621767158-2uag4rmgk8on8sdqbgsumn6il6rauupt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rrdev.fcmwithmysql",
+            "certificate_hash": "34b727805667c35368421adce46ec183e2135441"
+          }
+        },
+        {
+          "client_id": "1012621767158-e23b11iar5cujrsvhvqglifveld9d9c4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrR8QRSTnPk0aB1zGZcOzcKXFEDYIBBuk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1012621767158-e23b11iar5cujrsvhvqglifveld9d9c4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

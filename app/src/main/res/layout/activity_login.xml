@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/etUsernamelogin"
+        android:layout_width="match_parent"
+        android:hint="Username"
+        android:layout_height="50dp"/>
+
+    <EditText
+        android:id="@+id/etPassowrdlogin"
+        android:layout_width="match_parent"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:id="@+id/btnMasuk"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Masuk"/>
+
+</LinearLayout>
