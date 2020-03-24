@@ -1,10 +1,10 @@
-package com.rrdev.fcmwithmysql.FIrebase;
+package com.rrdev.fcmwithmysql.Firebase;
 
 import android.util.Log;
 
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.iid.FirebaseInstanceIdService;
-import com.rrdev.fcmwithmysql.notification.SharedPreference;
+import com.rrdev.fcmwithmysql.SharedPref.SharedPrefToken;
 
 /**
  * Created by delaroy on 10/8/17.
@@ -23,6 +23,6 @@ public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService {
 
     private void storeToken(String token) {
         //saving the token on shared preferences
-        SharedPreference.getInstance(getApplicationContext()).saveDeviceToken(token);
+        SharedPrefToken.getInstance(getApplicationContext()).saveDeviceToken(token);
     }
 }

@@ -7,7 +7,7 @@
     android:gravity="center"
     android:orientation="vertical"
     android:layout_margin="20dp"
-    tools:context=".LoginActivity">
+    tools:context=".activity.LoginActivity">
 
     <EditText
         android:id="@+id/etUsernamelogin"
@@ -23,7 +23,7 @@
         android:layout_height="50dp"/>
 
     <Button
-        android:id="@+id/btnMasuk"
+        android:onClick="login"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:text="Masuk"/>

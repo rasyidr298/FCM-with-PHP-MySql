@@ -1,11 +1,11 @@
-package com.rrdev.fcmwithmysql.FIrebase;
+package com.rrdev.fcmwithmysql.Firebase;
 
 import android.content.Intent;
 import android.util.Log;
 
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
-import com.rrdev.fcmwithmysql.RegisterActivity;
+import com.rrdev.fcmwithmysql.activity.RegisterActivity;
 import com.rrdev.fcmwithmysql.notification.MyNotificationManager;
 
 import org.json.JSONException;

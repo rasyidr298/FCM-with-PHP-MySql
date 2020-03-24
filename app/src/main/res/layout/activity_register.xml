@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:layout_margin="20dp"
-    tools:context=".RegisterActivity">
+    tools:context=".activity.RegisterActivity">
 
     <EditText
         android:id="@+id/etUsernameRegister"
@@ -24,12 +24,12 @@
     <Button
         android:id="@+id/btnRegister"
         android:text="Register"
-        android:onClick="sendToken"
+        android:onClick="toRegister"
         android:layout_width="100dp"
         android:layout_height="wrap_content" />
 
     <Button
-        android:id="@+id/btnLogin"
+        android:onClick="toLogin"
         android:text="Login"
         android:layout_width="100dp"
         android:layout_height="wrap_content" />

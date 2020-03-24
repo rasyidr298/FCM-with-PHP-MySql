@@ -17,16 +17,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
-
-/**
- * Created by delaroy on 10/8/17.
- */
-
 public class MyNotificationManager {
 
     public static final int ID_BIG_NOTIFICATION = 234;
     public static final int ID_SMALL_NOTIFICATION = 235;
-
     private Context mCtx;
 
     public MyNotificationManager(Context mCtx) {
@@ -58,6 +52,7 @@ public class MyNotificationManager {
                 .setSmallIcon(R.mipmap.ic_launcher)
                 .setLargeIcon(BitmapFactory.decodeResource(mCtx.getResources(), R.mipmap.ic_launcher))
                 .setContentText(message)
+                .setVibrate(new long[]{100, 200, 300, 400, 500, 400, 300, 200, 400})
                 .build();
 
         notification.flags |= Notification.FLAG_AUTO_CANCEL;
@@ -81,6 +76,7 @@ public class MyNotificationManager {
 
         NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(mCtx);
         Notification notification;
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
         notification = mBuilder.setSmallIcon(R.mipmap.ic_launcher).setTicker(title).setWhen(0)
                 .setAutoCancel(true)
                 .setContentIntent(resultPendingIntent)
@@ -88,6 +84,8 @@ public class MyNotificationManager {
                 .setSmallIcon(R.mipmap.ic_launcher)
                 .setLargeIcon(BitmapFactory.decodeResource(mCtx.getResources(), R.mipmap.ic_launcher))
                 .setContentText(message)
+                .setVibrate(new long[]{100, 200, 300, 400, 500, 400, 300, 200, 400})
+                .setPriority(Notification.PRIORITY_HIGH)
                 .build();
 
         notification.flags |= Notification.FLAG_AUTO_CANCEL;
