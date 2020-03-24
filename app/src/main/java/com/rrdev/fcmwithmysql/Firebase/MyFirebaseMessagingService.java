@@ -11,9 +11,6 @@ import com.rrdev.fcmwithmysql.notification.MyNotificationManager;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/**
- * Created by delaroy on 10/8/17.
- */
 
 public class MyFirebaseMessagingService extends FirebaseMessagingService {
 

@@ -6,10 +6,6 @@ import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.iid.FirebaseInstanceIdService;
 import com.rrdev.fcmwithmysql.SharedPref.SharedPrefToken;
 
-/**
- * Created by delaroy on 10/8/17.
- */
-
 public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService {
 
     private static final String TAG = "MyFirebaseIIDService";
